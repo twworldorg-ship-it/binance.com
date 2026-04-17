@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Center | Binance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .binance-yellow { color: #f0b90b; }
+        
+        .card {
+            transition: all 0.25s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        
+        /* MOBILE-FIRST FIXES */
+        .self-service-scroll {
+            scrollbar-width: none;
+        }
+        .self-service-scroll::-webkit-scrollbar {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 1.35rem;
+            }
+            .welcome-text {
+                font-size: 2.25rem;
+            }
+            .card {
+                min-width: 260px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#0a0c14] text-white">
+
+    <!-- Top Warning Bar -->
+    <div class="bg-black py-2 text-center text-xs text-gray-400 border-b border-gray-800 px-4">
+        Virtual currencies, real risks. The only guarantee in crypto is risk.
+    </div>
+
+    <!-- Navbar -->
+    <header class="bg-[#0f1117] sticky top-0 z-50 border-b border-gray-800">
+        <div class="max-w-screen-2xl mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Exact logo you requested -->
+            <div class="flex items-center">
+                <img src="https://download.logo.wine/logo/Binance/Binance-Logo.wine.png" 
+                     alt="Binance" 
+                     class="h-9 w-auto">
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="https://www.binance.com/en/trade" target="_blank" class="nav-link">Buy Crypto</a>
+                <a href="https://www.binance.com/en/markets" target="_blank" class="nav-link">Markets</a>
+                <a href="https://www.binance.com/en/trade" target="_blank" class="nav-link">Trade</a>
+                <a href="https://www.binance.com/en/earn" target="_blank" class="nav-link">Earn</a>
+                <a href="https://www.binance.com/en/support" target="_blank" class="nav-link binance-yellow">Support</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button onclick="document.getElementById('search-input').focus()" class="text-gray-400 hover:text-white">
+                    <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                </button>
+                <a href="https://www.binance.com/en/login" target="_blank" 
+                   class="hidden md:block px-6 py-2 text-sm border border-gray-600 rounded-full hover:border-gray-400">Log In</a>
+                <a href="https://www.binance.com/en/register" target="_blank" 
+                   class="px-6 py-2 text-sm font-semibold bg-[#f0b90b] text-black rounded-full hover:bg-yellow-400">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-screen-2xl mx-auto px-4 md:px-8 py-8">
+
+        <!-- Welcome -->
+        <div class="text-center mb-10">
+            <h1 class="text-4xl font-light">Welcome To</h1>
+            <div class="flex items-center justify-center gap-3 mt-2">
+                <h2 class="welcome-text text-5xl md:text-6xl font-bold tracking-tighter">Binance Help Center</h2>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="max-w-3xl mx-auto mb-14">
+            <div class="bg-[#1e2026] border border-gray-700 focus-within:border-[#f0b90b] rounded-3xl px-6 py-5 flex items-center gap-4">
+                <i class="fa-solid fa-magnifying-glass text-gray-400 text-xl"></i>
+                <input id="search-input" 
+                       type="text" 
+                       placeholder="Search or ask question" 
+                       onkeyup="if(event.key === 'Enter') handleSearch(this.value)"
+                       class="flex-1 bg-transparent outline-none text-lg placeholder-gray-500">
+            </div>
+        </div>
+
+        <!-- Self-Service - NOW HORIZONTAL SCROLL ON MOBILE (exact match to your screenshot) -->
+        <div class="mb-16">
+            <div class="flex justify-between items-center mb-6 px-1">
+                <h3 class="section-title text-2xl font-semibold">Self-Service</h3>
+                <a href="https://www.binance.com/en/support/self-service" target="_blank" class="text-[#f0b90b] flex items-center gap-1 text-sm hover:underline">
+                    More <i class="fa-solid fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+            
+            <!-- Horizontal scroll container -->
+            <div class="self-service-scroll flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory -mx-1 px-1">
+                <a href="https://www.binance.com/en/support" target="_blank" class="card bg-[#1e2026] p-6 rounded-3xl border border-gray-800 flex-shrink-0 w-[260px] snap-start">
+                    <i class="fa-solid fa-file-contract text-4xl text-[#f0b90b] mb-4"></i>
+                    <h4 class="font-semibold">Web3Alpha Related Appeal</h4>
+                    <p class="text-sm text-gray-400 mt-2">Appeal for Web3Alpha related issues.</p>
+                </a>
+                <a href="https://www.binance.com/en/support/deposit" target="_blank" class="card bg-[#1e2026] p-6 rounded-3xl border border-gray-800 flex-shrink-0 w-[260px] snap-start">
+                    <i class="fa-solid fa-arrow-down text-4xl text-[#f0b90b] mb-4"></i>
+                    <h4 class="font-semibold">Crypto Deposit Not Arrived</h4>
+                    <p class="text-sm text-gray-400 mt-2">Crypto deposit not credited to Binance account.</p>
+                </a>
+                <a href="https://www.binance.com/en/support/fiat-deposit" target="_blank" class="card bg-[#1e2026] p-6 rounded-3xl border border-gray-800 flex-shrink-0 w-[260px] snap-start">
+                    <i class="fa-solid fa-credit-card text-4xl text-[#f0b90b] mb-4"></i>
+                    <h4 class="font-semibold">Fiat Deposit Not Arrived Appeal</h4>
+                    <p class="text-sm text-gray-400 mt-2">Investigate missing or delayed fiat deposit record.</p>
+                </a>
+                <a href="https://www.binance.com/en/support/fiat-deposit-suspension" target="_blank" class="card bg-[#1e2026] p-6 rounded-3xl border border-gray-800 flex-shrink-0 w-[260px] snap-start">
+                    <i class="fa-solid fa-ban text-4xl text-[#f0b90b] mb-4"></i>
+                    <h4 class="font-semibold">Fiat Deposit Suspension</h4>
+                    <p class="text-sm text-gray-400 mt-2">Request review for failed fiat deposit via card.</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Top Questions + Latest Articles -->
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <div>
+                <h3 class="text-xl font-semibold mb-5 flex items-center gap-2">
+                    <span class="text-[#f0b90b]">★</span> Top Questions
+                </h3>
+                <div class="space-y-4">
+                    <a href="https://www.binance.com/en/support/faq" target="_blank" class="block bg-[#1e2026] p-5 rounded-3xl hover:bg-[#25282f]">1. Get Started on Binance Lite to Buy and Sell Your Crypto</a>
+                    <a href="https://www.binance.com/en/support/faq" target="_blank" class="block bg-[#1e2026] p-5 rounded-3xl hover:bg-[#25282f]">2. How to Complete Identity Verification for a Personal Account?</a>
+                    <a href="https://www.binance.com/en/support/faq" target="_blank" class="block bg-[#1e2026] p-5 rounded-3xl hover:bg-[#25282f]">3. How to Deposit/Withdraw Cryptocurrency on Binance?</a>
+                    <a href="https://www.binance.com/en/support/faq" target="_blank" class="block bg-[#1e2026] p-5 rounded-3xl hover:bg-[#25282f]">4. Frequently Asked Questions on Binance App Funding Wallet Migration</a>
+                    <a href="https://www.binance.com/en/support/faq" target="_blank" class="block bg-[#1e2026] p-5 rounded-3xl hover:bg-[#25282f]">5. Why Hasn't My Withdrawal Arrived?</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-5">Latest Articles</h3>
+                <div class="space-y-4">
+                    <a href="https://www.binance.com/en/support/announcement" target="_blank" class="block bg-[#1e2026] p-5 rounded-3xl hover:bg-[#25282f]">
+                        <div class="text-xs text-gray-400">2026-04-17</div>
+                        <div class="font-medium">SOON Trading Competition: Trade SOON and Share $150K Worth of Rewards</div>
+                    </a>
+                    <a href="https://www.binance.com/en/support/announcement" target="_blank" class="block bg-[#1e2026] p-5 rounded-3xl hover:bg-[#25282f]">
+                        <div class="text-xs text-gray-400">2026-04-17</div>
+                        <div class="font-medium">Binance Will Delist DEGO, DENT, TRU on 2026-04-28</div>
+                    </a>
+                    <a href="https://www.binance.com/en/support/announcement" target="_blank" class="block bg-[#1e2026] p-5 rounded-3xl hover:bg-[#25282f]">
+                        <div class="text-xs text-gray-400">2026-04-17</div>
+                        <div class="font-medium">Updates on Tick Size for Multiple USDT-M Perpetual Futures Contracts</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wallet Guide + Identity Verification -->
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <div class="bg-[#1e2026] rounded-3xl p-7">
+                <h4 class="font-semibold mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-wallet text-[#f0b90b]"></i> Binance Wallet Guide
+                </h4>
+                <div class="space-y-4 text-sm">
+                    <a href="https://www.binance.com/en/support" target="_blank" class="block hover:text-[#f0b90b]">What is Binance Wallet and How Does it Work?</a>
+                    <a href="https://www.binance.com/en/support" target="_blank" class="block hover:text-[#f0b90b]">What is a Keyless Wallet and Why Do I Need to Back It Up?</a>
+                    <a href="https://www.binance.com/en/support" target="_blank" class="block hover:text-[#f0b90b]">How to Back Up My Binance Wallet?</a>
+                    <a href="https://www.binance.com/en/support" target="_blank" class="block hover:text-[#f0b90b]">How to Restore My Binance Wallet?</a>
+                    <a href="https://www.binance.com/en/support" target="_blank" class="block hover:text-[#f0b90b]">How to Send and Receive Tokens on Binance Wallet?</a>
+                </div>
+            </div>
+
+            <div class="bg-[#1e2026] rounded-3xl p-7">
+                <h4 class="font-semibold mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-id-card text-[#f0b90b]"></i> Identity Verification
+                </h4>
+                <div class="space-y-4 text-sm">
+                    <a href="https://www.binance.com/en/support/faq" target="_blank" class="block hover:text-[#f0b90b]">Why Do I Need to Complete Identity Verification for My Binance Account?</a>
+                    <a href="https://www.binance.com/en/support/faq" target="_blank" class="block hover:text-[#f0b90b]">How to Complete Identity Verification for a Personal Account?</a>
+                    <a href="https://www.binance.com/en/support/faq" target="_blank" class="block hover:text-[#f0b90b]">How to Complete Entity Verification: A Step-by-Step Guide</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Announcement - 2 columns on mobile, 4 on desktop -->
+        <div class="mb-16">
+            <div class="flex justify-between items-center mb-6 px-1">
+                <h3 class="section-title text-2xl font-semibold">Announcement</h3>
+                <a href="https://www.binance.com/en/support/announcement" target="_blank" class="text-[#f0b90b] text-sm hover:underline">More →</a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="https://www.binance.com/en/support/announcement" target="_blank" class="card bg-[#1e2026] p-6 rounded-3xl text-center border border-gray-800">
+                    <i class="fa-solid fa-file text-4xl mb-4 text-[#f0b90b]"></i>
+                    <div class="font-medium">New Cryptocurrency Listing</div>
+                </a>
+                <a href="https://www.binance.com/en/support/announcement" target="_blank" class="card bg-[#1e2026] p-6 rounded-3xl text-center border border-gray-800">
+                    <i class="fa-solid fa-newspaper text-4xl mb-4 text-[#f0b90b]"></i>
+                    <div class="font-medium">Latest Binance News</div>
+                </a>
+                <a href="https://www.binance.com/en/support/announcement" target="_blank" class="card bg-[#1e2026] p-6 rounded-3xl text-center border border-gray-800">
+                    <i class="fa-solid fa-gift text-4xl mb-4 text-[#f0b90b]"></i>
+                    <div class="font-medium">Latest Activities</div>
+                </a>
+                <a href="https://www.binance.com/en/support/announcement" target="_blank" class="card bg-[#1e2026] p-6 rounded-3xl text-center border border-gray-800">
+                    <i class="fa-solid fa-list text-4xl mb-4 text-[#f0b90b]"></i>
+                    <div class="font-medium">New Fiat Listings</div>
+                </a>
+                <a href="https://www.binance.com/en/support/announcement" target="_blank" class="card bg-[#1e2026] p-6 rounded-3xl text-center border border-gray-800">
+                    <i class="fa-solid fa-trash text-4xl mb-4 text-[#f0b90b]"></i>
+                    <div class="font-medium">Delisting</div>
+                </a>
+                <a href="https://www.binance.com/en/support/announcement" target="_blank" class="card bg-[#1e2026] p-6 rounded-3xl text-center border border-gray-800">
+                    <i class="fa-solid fa-tools text-4xl mb-4 text-[#f0b90b]"></i>
+                    <div class="font-medium">Maintenance Updates</div>
+                </a>
+                <a href="https://www.binance.com/en/support/announcement" target="_blank" class="card bg-[#1e2026] p-6 rounded-3xl text-center border border-gray-800">
+                    <i class="fa-solid fa-code text-4xl mb-4 text-[#f0b90b]"></i>
+                    <div class="font-medium">API Updates</div>
+                </a>
+                <a href="https://www.binance.com/en/support/announcement" target="_blank" class="card bg-[#1e2026] p-6 rounded-3xl text-center border border-gray-800">
+                    <i class="fa-solid fa-gem text-4xl mb-4 text-[#f0b90b]"></i>
+                    <div class="font-medium">Crypto Airdrop</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Need More Support -->
+        <div class="bg-[#1e2026] rounded-3xl p-8 mb-16">
+            <h3 class="text-2xl font-semibold mb-8">Need More Support?</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <a href="https://www.binance.com/en/support/chat" target="_blank" class="flex gap-6 items-start bg-[#25282f] p-7 rounded-3xl hover:bg-[#2a2f38]">
+                    <div class="flex-shrink-0 w-12 h-12 bg-blue-500/10 rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-headset text-4xl text-blue-400"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="font-semibold text-lg">Chat Support</div>
+                        <p class="text-gray-400 text-sm mt-1">Feel free to reach out to us if you encounter any issues; our chat support team is available 24/7.</p>
+                        <span class="text-[#f0b90b] text-sm mt-6 inline-block">View more →</span>
+                    </div>
+                </a>
+                
+                <a href="https://www.binance.com/en/support/feedback" target="_blank" class="flex gap-6 items-start bg-[#25282f] p-7 rounded-3xl hover:bg-[#2a2f38]">
+                    <div class="flex-shrink-0 w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-pencil text-4xl text-emerald-400"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="font-semibold text-lg">Product Feedback &amp; Suggestions</div>
+                        <p class="text-gray-400 text-sm mt-1">Binance is always here to listen. Let's enhance our community together.</p>
+                        <span class="text-[#f0b90b] text-sm mt-6 inline-block">View more →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 text-xs py-12 border-t border-gray-800">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-y-10">
+                <div>
+                    <div class="text-white font-medium mb-3">About Us</div>
+                    <a href="https://www.binance.com/en/about" target="_blank" class="block py-1 hover:text-white">About</a>
+                    <a href="https://www.binance.com/en/careers" target="_blank" class="block py-1 hover:text-white">Careers</a>
+                </div>
+                <div>
+                    <div class="text-white font-medium mb-3">Products</div>
+                    <a href="https://www.binance.com/en/trade" target="_blank" class="block py-1 hover:text-white">Exchange</a>
+                    <a href="https://www.binance.com/en/earn" target="_blank" class="block py-1 hover:text-white">Earn</a>
+                </div>
+                <div>
+                    <div class="text-white font-medium mb-3">Support</div>
+                    <a href="https://www.binance.com/en/support" target="_blank" class="block py-1 hover:text-white">Support Center</a>
+                    <a href="https://www.binance.com/en/support/chat" target="_blank" class="block py-1 hover:text-white">24/7 Chat Support</a>
+                </div>
+                <div>
+                    <div class="text-white font-medium mb-3">Community</div>
+                    <div class="flex gap-4 text-2xl">
+                        <i class="fa-brands fa-x-twitter hover:text-white"></i>
+                        <i class="fa-brands fa-telegram hover:text-white"></i>
+                        <i class="fa-brands fa-facebook hover:text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="text-[10px] mt-16 pt-8 border-t border-gray-800 text-center">
+                © 2026 Binance.com. All rights reserved.<br>
+                School project replica • All links open real Binance pages
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleSearch(query) {
+            if (query && query.trim() !== '') {
+                window.open(`https://www.binance.com/en/support/search?query=${encodeURIComponent(query)}`, '_blank');
+            }
+        }
+        
+        window.onload = function() {
+            console.log('%c✅ Binance Support Replica – Mobile Flex Fixed!', 'color:#f0b90b; font-size:16px; font-weight:bold');
+            console.log('Self-Service now uses perfect horizontal scroll on mobile (exactly like your screenshot).');
+        };
+    </script>
+</body>
+</html>
